@@ -1,0 +1,459 @@
+body{
+    background-color: black;
+    font-family:Georgia, Times, serif Arial, Helvetica, sans-serif;
+}
+.h2nav{
+    color: azure;
+    margin-top: 100px;
+}
+.h2nav1{
+    color: azure;
+    margin-top: 0;
+}
+.hrnav{
+    width: 200px;
+    margin-left: 0;
+    opacity: 0.5;
+}
+#h3main{
+    padding: 24px 0 0;
+    color: lightgrey;
+}
+nav{
+    background-color: #222;
+    height: 100%;
+    width: 120px;
+    float: left;
+    padding: 0;
+    margin-left: -8px;
+    margin-top: 25px;
+    position: fixed;
+    
+}
+
+#navimg{
+    width: 100%;
+    height: auto;
+    opacity: 0.8;   
+}
+#navimg:hover{
+    opacity: 1;
+}
+#navlogo{
+    width: 100%;
+    height: 125px;
+    transition: width 2s;
+}
+#navlogo:hover{
+    width: 238px;
+    height: 110px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+nav > #homenav{
+    list-style-type: none;
+    padding: 0;
+}
+nav > #homenav > li{
+    width: 100%;
+}
+nav > #homenav > li > a{
+    display: block;
+    text-decoration: none;   
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 18px 20px;
+}
+nav > #homenav > li > a > .fa-solid{
+    color: white;
+    margin-bottom: 30px;
+}
+nav > #homenav > li > a.active {
+    background-color: #4CAF50;
+    color: fuchsia;
+}
+nav > #homenav > li > a:hover:not(.active) {
+    background-color: black;
+}
+.nav-base-links{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-base-links > a{
+    color: gray;
+}
+.nav-base-links > a:hover{
+    opacity: 0.8;
+    color: whitesmoke;
+}
+
+
+/* small screen nav*/
+.mobile-menu{
+    display: none;
+}
+.mobile-menu > div{
+    display: flex;
+    position: fixed;
+    justify-content:space-evenly;
+    width: 100%;
+    background-color: rgb(24, 24, 26);
+    margin-top: -25px;
+    padding: 14px 0;
+}
+.mobile-menu > div > a{
+    margin: auto;
+    color: grey;
+    text-decoration: none;
+    font-size: small;
+
+}
+.mobile-menu > div > a:link, .mobile-menu > div > a:visited{
+    color: rgb(192, 189, 197);
+    padding: 10px 40px;
+    margin: -15px 0;
+    text-align: center;
+    display: inline-block;
+}
+.mobile-menu > div > a:hover{
+    color: rgb(66, 60, 60);
+    background-color: grey;
+}
+.mobile-menu > div > a:active{
+    color: yellow;
+}
+
+
+/* Body section begins */
+#main{
+    margin-left: 240px;
+    margin-right: 120px;
+}
+
+/* Header section begins */
+#homeheader{
+    /* background: linear-gradient(to right, #00093c, #023b05); */
+    /* background-color: rgb(0, 139, 139, 0.2); */
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: 'Sacramento', cursive; */
+    margin: -50px -127px 0 -127px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background: url(coding3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    /* background-color: #fff; */
+    width: 100%;
+    height: 100%;
+}
+#homeheader > .homeheader-text{
+    margin: 150px 0 0 100px;
+    color: white;
+    z-index: 7;
+}
+#homeheader > .homeheader-text > h1{
+    font-size: 40px;
+    padding-top: 70px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+#homeheader > .homeheader-text > p{
+    margin-top: -5px;
+    color: rgb(175, 179, 194);
+}
+.homeheader-img > #imgheader{
+    height: 700px;
+    /* width: 600px; */
+    opacity: 0.8;
+    z-index: 7;
+
+}
+.homeheader-img > #imgheader-mobile{
+    display: none;
+}
+/* Header section ends */
+
+
+
+/* About section Begins */
+.section > p{
+        color: rgb(175, 179, 194);
+}
+
+/* About Skill */
+.skillwhite{
+    background-color: white;
+}
+.skillgray{
+    background-color: darkgrey;
+    height: 28px;
+    width: 95%;
+}
+.skillgray2{
+    background-color: darkgrey;
+    height: 28px;
+     width: 85%;
+}
+.skillgray3{
+    background-color: darkgrey;
+    height: 28px;
+     width: 80%;
+}
+
+/* About Resume*/
+.resume{
+    overflow: auto;
+    display: flex;
+    background-color:rgb(230, 225, 235);
+    justify-content: center;
+}
+.resumetext{
+    margin: 0 8px;
+    padding: 30px 60px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+.resumenumbers{
+    font-size: larger;
+}
+#resumedwlnd{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+}
+#resumedwlnd:hover{
+    background-color: lightgrey;
+}
+
+/* About Price */
+.Pricecontainer{
+    display: flex;
+}
+.basicprice{
+   margin: 0 8px 0 0;
+   width: 100%;
+}
+.proprice{
+    margin: 0 0 0 8px;
+    width: 100%;
+}
+.pricelist{
+    list-style-type: none;
+    background-color: lightgrey;
+    color: rgb(223, 209, 209);
+    opacity: 0.7;
+    text-align: center;
+}
+.pricelist:hover{
+   opacity: 1;
+    background-color: white;
+}
+.priceshead{
+    background-color: rgb(56, 56, 59);
+    font-size: x-large;
+    padding: 32px;
+    margin-left: -40px;
+}
+.prices{
+    color: black;
+    padding: 16px;
+    border-bottom: 1px solid grey;
+    margin-left: -40px;
+}
+.pricecost{
+    opacity: 0.5;
+}
+.listsign{
+    background-color: rgb(233, 234, 241);
+    padding: 24px;
+    margin-left: -40px;
+}
+.listsignup{
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+}
+.listsignup:hover{
+    background-color: black;
+    color: white;
+}
+
+/* About Reputation*/
+.imgrating{
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 25px;
+    opacity: 1;
+}
+.ratername{
+    font-size: large;
+    margin-right: 25px;
+}
+.prates{
+    color: lightgrey;
+}
+.rating{
+    color: rgb(150, 142, 142);
+}
+/* About Section Ends */
+
+/* My design section starts here*/
+.designsphotos{
+    background: linear-gradient(to right, #00093c, #2d0b00);
+}
+.mydesigns > img{
+    width: 191px;
+    margin: 0;
+}
+#design1, #design2, #design3, #design4, #design5, #design6, #design7{
+    transition: width 2s;
+}
+#design1:hover, #design2:hover, #design4:hover,  #design5:hover,  #design6:hover,  #design7:hover{
+    width: 250px;
+    height: 350px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+#design3:hover{
+    width: 350px;
+    height: 350px;
+    transform: rotate(360deg);
+    border: 5px solid blue;
+}
+/* About Design Ends*/
+
+
+
+/* Contact Section starts here */
+.mycontact{
+    color: rgb(150, 142, 142);
+}
+.mycontact > p > i{
+    margin: 0 30px 30px 0;
+    color: white;
+}
+#enugu{
+    margin-left: 8px;
+}
+/* #pemailchat{
+    color: rgb(150, 142, 142);
+    font-size: 15px;
+} */
+legend{
+    color: rgb(150, 142, 142);
+}
+.emailchat{
+    padding: 10px 0;
+    width: 100%;
+    font-size: 15px;
+}
+#emailchat-textarea{
+    height: 100px;
+    padding: 0;
+    font-size: 17px;
+}
+#submitemailchat{
+    padding: 16px 30px;
+    border: none;
+    font-size: 15px;
+}
+#submitemailchat:hover{
+    background-color: darkgrey;
+}
+/* Contact Section Ends*/
+
+/* Footer Section Begins*/
+#pagefooter{
+    color: grey;
+    padding: 64px 0;
+    margin-top: 120px;
+}
+#pagefooter > .footer-logo-links{
+    color: grey;
+}
+#pagefooter > .footer-logo-links:hover{
+    opacity: 0.5;
+}
+#pagefooter > p{
+    font-size: medium;
+    text-align: center;
+}
+#pagefooter > p > #footer-link{
+    color: grey;
+}
+#pagefooter > p > #footer-link:hover{
+    color: blue;
+}
+#after-footer-logo{
+    width: 100px;
+    margin: 0 0 -5px 745px;
+}
+/* Footer Section End */
+
+/* Body Section Ends */
+
+@media screen and (max-width: 600px) {
+    nav{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .resume{
+        display: block;
+    }
+    #after-footer-logo{
+        margin-left: 239px;
+    }
+    #homeheader{
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        background: url(coding3.jpg) no-repeat center;
+        background-size: cover;
+        position: relative;
+    }
+    #homeheader > .homeheader-text{
+        margin: 0;
+    }
+    #imgheader{
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    .homeheader-img > #imgheader-mobile{
+        margin-top: -97px;
+        display: block;
+    }
+    .mydesigns > img{
+        width: 19%;
+    }
+    .mydesigns > img{
+        transition: none;
+        transform: none;
+    }
+    #design1, #design2, #design3, #design4, #design5, #design6, #design7{
+        transition: none;
+    }
+    #design1:hover, #design2:hover, #design3:hover, #design4:hover,  #design5:hover,  #design6:hover,  #design7:hover{
+        transition: none;
+        width: 19%;
+        height: auto;
+        transform: none;
+        border: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
